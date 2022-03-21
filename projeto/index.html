@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <!-- Page Title -->
+    <title> Venor CMS | Agência Criativa </title>
+    <script type="text/javascript">
+        window.paceOptions = { ajax: false, restartOnRequestAfter: false, restartOnPushState: false };
+    </script>
+    <!-- Meta Data -->
+    
+    <script type='text/javascript' src="https://quin.lucian.host/js/front/pace.min.js" id='pace-js'></script>
+    <script> setTimeout(function () { Pace.stop(); }, 4500);</script>
+    <!-- Styles -->
+    <link href="https://quin.lucian.host/css/front/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="https://quin.lucian.host/css/libs/fontawesome.min.css" type="text/css" rel="stylesheet">
+    <link href="https://quin.lucian.host/css/front/owl.carousel.min.css" type="text/css" rel="stylesheet">
+    <link href="https://quin.lucian.host/css/front/venor.css" type="text/css" rel="stylesheet">
+    <!-- Inline Styles -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .pace-cover {
+            background-image: url(https://quin.lucian.host/public/images/media/1632820172logo-white.svg);
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body class="common-front ">
+    <!-- body -->
+    <div class="pace-cover"></div>
+    <header class="header">
+        <div class="header__content__venor">
+            <div class="header__logo">
+                <a href="https://quin.lucian.host" title="Quin CMS Tema">
+                    <img width="105" height="22" class="img-fluid logo-front"
+                        src="/public/images/media/1633027761logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header__actions__venor">
+                <div class="header__action">
+                    <a class="header__action-btn header__action-btn--start-project"
+                        href="https://quin.lucian.host/portfolio">
+                        Nosso Portfólio <svg width="11.4" height="9.2">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__action">
+                    <a class="header__action-btn header__action-btn--start-project"
+                        href="https://quin.lucian.host/contact">
+                        Comece um projeto <svg width="11.4" height="9.2">
+                            <use xlink:href="#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-burger">
+        <div class="burger"> <span></span> <span></span> <span></span> </div>
+    </div>
+    <div class="fixed-sidebar-menu-overlay" style="opacity: 0;"></div>
+    <div class="fixed-sidebar-menu-holder header7">
+        <div class="fixed-sidebar-menu">
+            <div class="header7 sidebar-content">
+                <div class="left-side">
+                    <div class="left-side-inner">
+                        <div class="flx-div">
+                            <img src="/public/img/sidebar-img.svg" alt="sidebar-img.svg">
+                        </div>
+                        <div class="header__menu__venor">
+                            <ul class="header__nav">
+                                <li class="header__nav-item"> <a title="Casa" class="header__nav-link"
+                                        href="https://quin.lucian.host/">Casa</a> </li>
+                                <li class="header__nav-item"> <a title="Sobre nós" class="header__nav-link"
+                                        href="https://quin.lucian.host/about-us">Sobre nós</a> </li>
+                                <li class="header__nav-item dropdown">
+                                    <a class="header__nav-link dropdown-toggle"
+                                        href="https://quin.lucian.host/portfolio" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">Portfólio
+                                    </a>
+                                    <ul class="dropdown-menu header__nav-menu">
+                                        <li><a href="/portfolio">Nossos projetos</a></li>
+                                        <li><a href="/project/niva">Niva Tema Them</a></li>
+                                        <li><a href="/project/venor">Venor Tema Theme</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav-item"> <a title="Preços" class="header__nav-link"
+                                        href="https://quin.lucian.host/pricing">Preços</a> </li>
+                                <li class="header__nav-item dropdown">
+                                    <a class="header__nav-link dropdown-toggle" href="https://quin.lucian.host/blog"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Blog
+                                    </a>
+                                    <ul class="dropdown-menu header__nav-menu">
+                                        <li><a href="/blog">Nossas notícias recentes</a></li>
+                                        <li><a href="/post/top-6-articles-you-must-read-today-niva">Os 6 principais
+                                                artigos que você deve ler</a></li>
+                                        <li><a href="/post/7-creative-ways-to-boost-your-social-media">Sete maneiras
+                                                criativas de impulsionar sua mídia</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__nav-item"> <a title="Contato" class="header__nav-link"
+                                        href="https://quin.lucian.host/contact">Contato</a> </li>
+                            </ul>
+                        </div>
+                        <div class="menu-description">
+                            <p>Tem um projeto para nós?</p>
+                            <p><a class="btn btn-slider" href="/contact" target="_self">Vamos conversar</a></p>
+                        </div>
+                        <div class="header-social-share">
+                            <ul>
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><em
+                                            class="facebook-icon"><strong>facebook</strong></em></a></li>
+                                <li><a href="https://twitter.com/SweetThemes1" target="_blank" rel="noopener"><em
+                                            class="twitter-icon"><strong>twitter</strong></em></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><em
+                                            class="instagram-icon"><strong>instagram</strong></em></a></li>
+                                <li><a href="https://www.behance.net" target="_blank" rel="noopener"><em
+                                            class="behance-icon"><strong>behance</strong></em></a></li>
+                                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><em
+                                            class="linkedin-icon"><strong>linkedin</strong></em></a></li>
+                            </ul>
+                        </div>
+                        <div class="address-sidebar">
+                            <div><img width="16" height="16" src="/public/img/map-pin.svg" alt="map-pin.svg"> Rua
+                                Unirii, 191, Bucareste</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-venor-section">
+        <div class="slider-venor owl-carousel">
+            <div class="slider-inner-venor"
+                data-background-image-url="/public/images/media/163302763816327698011632602616Consult_header-10.webp">
+                <div class="container">
+                    <div class="slider-content">
+                        <h1 class="active">Buscando
+                            soluções digitais? </h1>
+                        <h2 class="active">Não diga mais</h2>
+                        <div class="slider-body   active ">
+                            <p>Quer voc&ecirc; precise de um novo logotipo, site, v&iacute;deo, <strong>campanha
+                                </strong>de marketing ou ebook criado para sua empresa, a chave para tornar o projeto um
+                                <strong>sucesso </strong>come&ccedil;a com um briefing criativo bem pensado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-inner-venor" data-background-image-url="/public/images/media/1633027720quinheader.webp">
+                <div class="container">
+                    <div class="slider-content">
+                        <h1>Artesanato digital </h1>
+                        <h2>Experiências</h2>
+                        <div class="slider-body  ">
+                            <p>Quer voc&ecirc; precise de um novo logotipo, site, v&iacute;deo, <strong>campanha
+                                </strong>de marketing ou ebook criado para sua empresa, a chave para tornar o projeto um
+                                <strong>sucesso </strong>come&ccedil;a com um briefing criativo bem pensado.</p>
+                        </div>
+                        <div class="button-slider-b">
+                            <a href="https://quin.lucian.host/contact" target="_self" class="btn btn-slider"><span>Pegue
+                                    a oferta</span><svg width="11.4" height="9.2">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                        <div class="button-slider-b">
+                            <a href="https://quin.lucian.host/about-us" target="_self" class="btn btn-slider"><span>Veja
+                                    nosso portfólio</span><svg width="11.4" height="9.2">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-social-share">
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"><em
+                            class="facebook-icon"><strong>facebook</strong></em></a></li>
+                <li><a href="https://twitter.com/SweetThemes1" target="_blank" rel="noopener"><em
+                            class="twitter-icon"><strong>twitter</strong></em></a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><em
+                            class="instagram-icon"><strong>instagram</strong></em></a></li>
+                <li><a href="https://www.behance.net" target="_blank" rel="noopener"><em
+                            class="behance-icon"><strong>behance</strong></em></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener"><em
+                            class="linkedin-icon"><strong>linkedin</strong></em></a></li>
+            </ul>
+        </div>
+        <a href="#" class="hero__scroll"><svg width="15" height="22.1">
+                <use xlink:href="#scroll"></use>
+            </svg></a>
+    </div>
+    <div class="about-section light-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="item-about">
+                        <div class="item-about-row">
+                            <div class="item-about-img2">
+                                <div class="avo-image avo-tooltip about-img3 big-paral">
+                                    <div class="simpleParallax imago" data-tooltip-tit="Serviços de Web Design"
+                                        data-tooltip-sub="Experiência de usuário"><img
+                                            src="/public/img/loading-blog.gif" width="500" height="666"
+                                            class="lazy thumparallax-down img-fluid"
+                                            data-src="https://quin.lucian.host/public/images/media/1632839113about-us-pic1.webp"
+                                            alt="about-us" /></div>
+                                </div>
+                            </div>
+                            <div class="item-about-img1">
+                                <div class="avo-image avo-tooltip about-img1 big-paral">
+                                    <div class="simpleParallax imago" data-tooltip-tit="Agência Criativa"
+                                        data-tooltip-sub="Estratégia de marketing"><img
+                                            src="/public/img/loading-blog.gif" width="500" height="666"
+                                            class="lazy thumparallax-down img-fluid"
+                                            data-src="https://quin.lucian.host/public/images/media/1632839112about-us-pic2.webp"
+                                            alt="about-us" /></div>
+                                </div>
+                                <div class="avo-image avo-tooltip about-img2 big-paral">
+                                    <div class="simpleParallax imago" data-tooltip-tit="Desenvolvimento web"
+                                        data-tooltip-sub="Código de Qualidade"><img src="/public/img/loading-blog.gif"
+                                            width="500" height="666" class="lazy thumparallax-down img-fluid"
+                                            data-src="https://quin.lucian.host/public/images/media/1632839112about-us-pic3.webp"
+                                            alt="about-us" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exp-about">
+                            <h5 class="nmb-font-about">12</h5>
+                            <h6 class="service_summary-about">ANOS DE EXPERIÊNCIA</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="about-heading1-home">SOBRE A AGÊNCIA</h4>
+                    <h3 class="about-heading2-home">Habilidades ilimitadas para <span>superprojetos.</span></h3>
+                    <p> <strong> Web design </strong> engloba muitas habilidades e disciplinas diferentes na produção e
+                        manutenção de sites. As diferentes áreas de web design incluem web design gráfico, design de
+                        interface, incluindo código padronizado. </p>
+                    <ul>
+                        <li> UI bonita e fácil de entender, animações profissionais </li>
+                        <li> Essas vantagens são design & amp; perfeitos de pixel; código claro entregue </li>
+                        <li> Apresente seus serviços de forma flexível, conveniente e polivalente </li>
+                    </ul>
+                    <a href="https://quin.lucian.host/pricing" target="_self" class="btn btn-style1"><span>Pegue a
+                            oferta</span><svg width="11.4" height="9.2">
+                            <use xlink:href="#arrow"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container">
+            <h3>Como podemos <span>ajudar?</span></h3>
+            <div class="description-services">
+                <p>Ajudamos as marcas <strong>premium </strong>a alcan&ccedil;arem seu futuro por meio da
+                    inova&ccedil;&atilde;o e de perspectivas criativas. Fazemos sua empresa crescer por meio de
+                    <strong>ideias </strong>pr&oacute;prias, testadas e aperfei&ccedil;oadas ao longo dos anos.</p>
+            </div>
+            <div class="service-boxes-slider owl-carousel">
+                <div class="card-parent">
+                    <div class="card-inner-row">
+                        <div class="card featured to-top-left">
+                            <div class="heading-wrapper">
+                                <h4 class="heading"><i class="fab fa-google"></i> Soluções de SEO</h4>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <p class="paragraph">Palavras-chave de pesquisa também. O primeiro lugar para começar
+                                    quando se trata de soluções de SEO são as próprias palavras-chave.</p>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/service-example" title="Soluções de SEO"><span>Mais
+                                        informações</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1632922118quin-service2.webp" alt="Soluções de SEO">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-parent">
+                    <div class="card-inner-row">
+                        <div class="card featured to-top-left">
+                            <div class="heading-wrapper">
+                                <h4 class="heading"><i class="fas fa-crown"></i> Designer de Web</h4>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <p class="paragraph">O design da Web abrange muitas habilidades e disciplinas diferentes
+                                    na produção e manutenção de websites.</p>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/service-example" title="Designer de Web"><span>Mais
+                                        informações</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1632922319quin-service1.webp" alt="Designer de Web">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-parent">
+                    <div class="card-inner-row">
+                        <div class="card featured to-top-left">
+                            <div class="heading-wrapper">
+                                <h4 class="heading"><i class="fas fa-mobile"></i> Desenvolvimento</h4>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <p class="paragraph">Palavras-chave de pesquisa também. O primeiro lugar para começar
+                                    quando se trata de soluções de SEO.</p>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/service-example" title="Desenvolvimento"><span>Mais
+                                        informações</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1632921978quin-service-webdesign1.webp"
+                                alt="Desenvolvimento">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-parent">
+                    <div class="card-inner-row">
+                        <div class="card featured to-top-left">
+                            <div class="heading-wrapper">
+                                <h4 class="heading"><i class="fas fa-bullhorn"></i> Anunciar</h4>
+                            </div>
+                            <div class="paragraph-wrapper">
+                                <p class="paragraph">O design da Web abrange muitas habilidades e disciplinas diferentes
+                                    na produção e manutenção de websites.</p>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/service-example" title="Anunciar"><span>Mais
+                                        informações</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1632922413quin-service4.webp" alt="Anunciar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fun-facts-section light-section" id="fun-facts">
+        <div class="container">
+            <h3 class="fun-facts-heading1">Curiosidades</h3>
+            <p>Ao longo dos anos, fizemos muitas coisas das quais nos orgulhamos. Isso nos motiva a continuar em busca
+                de novos desafios para aprimorar nossos serviços.</p>
+            <div class="row fun-facts-timer">
+                <div class="col-md-3">
+                    <div class="radial">
+                        <div class="radial-icon"><i class="far fa-smile"></i></div>
+                        <span class="timer" data-from="0" data-to="425" data-speed="4000">425</span>
+                        <h4>Ótimos Projetos</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="radial">
+                        <div class="radial-icon"><i class="fas fa-mug-hot"></i></div>
+                        <span class="timer" data-from="0" data-to="12" data-speed="4000">12</span>
+                        <h4>Inovações</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="radial">
+                        <div class="radial-icon"><i class="far fa-lightbulb"></i></div>
+                        <span class="timer" data-from="0" data-to="1320" data-speed="4000">1320</span>
+                        <h4>Copos de café</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="radial">
+                        <div class="radial-icon"><i class="fas fa-briefcase"></i></div>
+                        <span class="timer" data-from="0" data-to="860" data-speed="4000">860</span>
+                        <h4>Clientes Felizes</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-section">
+        <div class="container">
+            <h4>TRABALHOS SELECIONADOS</h4>
+            <h3>Nossos projetos <span>premium.</span></h3>
+            <div class="portfolio-slider owl-carousel">
+                <div class="portfolio-slider-inner">
+                    <div class="project-box-div">
+                        <a href="https://quin.lucian.host/project/niva" title="Niva Tema do folheto">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1633884505project1quin.webp" alt="Niva Tema do folheto">
+                        </a>
+                        <div class="project-meta">
+                            <div class="project-number">
+                                <span>01</span>
+                            </div>
+                            <div class="project-category">
+                                <span class="block_text">Programação </span>
+                            </div>
+                            <div class="project-meta-title">
+                                <a href="https://quin.lucian.host/project/niva" title="Niva Tema do folheto"><span
+                                        class="project__text">Niva Tema do folheto</span></a>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/project/niva" title="Niva Tema do folheto"><span>Ver
+                                        projeto</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-slider-inner">
+                    <div class="project-box-div">
+                        <a href="https://quin.lucian.host/project/niva-cms" title="Niva Design de logotipo">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1633885407ezgif.com-gif-maker (8).webp"
+                                alt="Niva Design de logotipo">
+                        </a>
+                        <div class="project-meta">
+                            <div class="project-number">
+                                <span>02</span>
+                            </div>
+                            <div class="project-category">
+                                <span class="block_text">CMS </span>
+                            </div>
+                            <div class="project-meta-title">
+                                <a href="https://quin.lucian.host/project/niva-cms"
+                                    title="Niva Design de logotipo"><span class="project__text">Niva Design de
+                                        logotipo</span></a>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/project/niva-cms"
+                                    title="Niva Design de logotipo"><span>Ver projeto</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-slider-inner">
+                    <div class="project-box-div">
+                        <a href="https://quin.lucian.host/project/rentzone" title="Rentzone Folheto">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1633884677Project2quib.webp" alt="Rentzone Folheto">
+                        </a>
+                        <div class="project-meta">
+                            <div class="project-number">
+                                <span>03</span>
+                            </div>
+                            <div class="project-category">
+                                <span class="block_text">Tema </span>
+                            </div>
+                            <div class="project-meta-title">
+                                <a href="https://quin.lucian.host/project/rentzone" title="Rentzone Folheto"><span
+                                        class="project__text">Rentzone Folheto</span></a>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/project/rentzone" title="Rentzone Folheto"><span>Ver
+                                        projeto</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-slider-inner">
+                    <div class="project-box-div">
+                        <a href="https://quin.lucian.host/project/venor" title="Venor Tema WordPress">
+                            <img class="img-fluid project-image lazy" width="400" height="400"
+                                src="/public/img/loading-blog.gif "
+                                data-src="/public/images/media/1633028145project3quin.webp" alt="Venor Tema WordPress">
+                        </a>
+                        <div class="project-meta">
+                            <div class="project-number">
+                                <span>04</span>
+                            </div>
+                            <div class="project-category">
+                                <span class="block_text">Tema </span>
+                            </div>
+                            <div class="project-meta-title">
+                                <a href="https://quin.lucian.host/project/venor" title="Venor Tema WordPress"><span
+                                        class="project__text">Venor Tema WordPress</span></a>
+                            </div>
+                            <div class="project-button">
+                                <a href="https://quin.lucian.host/project/venor" title="Venor Tema WordPress"><span>Ver
+                                        projeto</span><svg viewBox="0 0 80 80">
+                                        <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                        <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-section light-section">
+        <div class="container">
+            <h3>Nossos clientes</h3>
+            <p>Eles são apenas alguns dos que confiaram em nossos serviços. Projeto entregue, cliente satisfeito com
+                quin cms.</p>
+            <div class="testimonial-section-slider owl-carousel">
+                <blockquote class="testimonial-slide">
+                    <div class="testimonial-layout1">
+                        <div class="item-figure">
+                            <img class="img-fluid" width="90" height="90"
+                                src="https://quin.lucian.host/public/images/media/1633178646testimonial3_1.webp" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3 class="item-title">Michael Doe</h3>
+                            <div class="item-sub-title">Envato voluntário</div>
+                            <div class="item-paragraph">
+                                <p> É a solução perfeita para o nosso negócio. <strong> Quin </strong> é o recurso
+                                    comercial mais valioso que NUNCA compramos. Já vimos resultados incríveis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </blockquote>
+                <blockquote class="testimonial-slide">
+                    <div class="testimonial-layout1">
+                        <div class="item-figure">
+                            <img class="img-fluid" width="90" height="90"
+                                src="https://quin.lucian.host/public/images/media/1633178646testimonial2_1.webp" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3 class="item-title">Felix Doe</h3>
+                            <div class="item-sub-title">Scoro programador</div>
+                            <div class="item-paragraph">
+                                <p> É a solução perfeita para o nosso negócio. <strong> Quin </strong> é o recurso
+                                    comercial mais valioso que NUNCA compramos. Já vimos resultados incríveis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </blockquote>
+                <blockquote class="testimonial-slide">
+                    <div class="testimonial-layout1">
+                        <div class="item-figure">
+                            <img class="img-fluid" width="90" height="90"
+                                src="https://quin.lucian.host/public/images/media/1633178648testimonial1_1.webp" alt="">
+                        </div>
+                        <div class="item-content">
+                            <h3 class="item-title">Lucian Ionut</h3>
+                            <div class="item-sub-title">Sweet Themes programador</div>
+                            <div class="item-paragraph">
+                                <p> É a solução perfeita para o nosso negócio. <strong> Quin </strong> é o recurso
+                                    comercial mais valioso que NUNCA compramos. Já vimos resultados incríveis. </p>
+                            </div>
+                        </div>
+                    </div>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="blog-section">
+        <div class="container">
+            <h3 class="blog-section-subtitle">POSTAGENS NO BLOG</h3>
+            <h3 class="blog-section-title">Nossas últimas notícias</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-single-post">
+                        <div class="after-bg">
+                            <img class="lazy blog_post_image img-fluid" width="370" height="380"
+                                src="https://cdn.dribbble.com/users/105033/screenshots/1132714/loading-animation-800.gif"
+                                data-src="/public/images/media/1615660380post-rece3.jpg"
+                                alt="Sete maneiras criativas de impulsionar sua mídia">
+                        </div>
+                        <div class="blog-item">
+                            <div class="box-content p-relative">
+                                <div class="box-content-body">
+                                    <div class="entry-meta">
+                                        <div class="entry-date"><span> Mar 13, 2021 </span></div>
+                                    </div>
+                                    <h2 class="title-block">
+                                        <a href="https://quin.lucian.host/post/7-creative-ways-to-boost-your-social-media"
+                                            title="Sete maneiras criativas de impulsionar sua mídia">Sete maneiras
+                                            criativas de impulsionar sua mídia</a>
+                                    </h2>
+                                    <div class="block-desc">
+                                        <p>Branding existe desde 350 d.C. e é derivado da palavra “Brandr”, que
+                                            significa “queimar” na língua nórdica antiga. Por volta de 1500, passou a
+                                            significar a marca que os fazendeiros queimavam no gado para significar
+                                            propriedade. Ainda assim, a marca hoje é mais do que apenas um visual ou um
+                                            logotipo. Passou a significar a reação emocional de &quot;intuição&quot; que
+                                            uma empresa pode provocar em seus clientes</p>
+                                    </div>
+                                    <div class="project-button">
+                                        <a href="https://quin.lucian.host/post/7-creative-ways-to-boost-your-social-media"
+                                            title="Sete maneiras criativas de impulsionar sua mídia"><span>Carregue
+                                                mais</span><svg viewBox="0 0 80 80">
+                                                <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                                <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-single-post">
+                        <div class="after-bg">
+                            <img class="lazy blog_post_image img-fluid" width="370" height="380"
+                                src="https://cdn.dribbble.com/users/105033/screenshots/1132714/loading-animation-800.gif"
+                                data-src="/public/images/media/1615660375post-rece2.jpg"
+                                alt="O mais recente design do designer de tecnologia John Doe">
+                        </div>
+                        <div class="blog-item">
+                            <div class="box-content p-relative">
+                                <div class="box-content-body">
+                                    <div class="entry-meta">
+                                        <div class="entry-date"><span> Mar 13, 2021 </span></div>
+                                    </div>
+                                    <h2 class="title-block">
+                                        <a href="https://quin.lucian.host/post/tech-designer-john-does-latest-creation"
+                                            title="O mais recente design do designer de tecnologia John Doe">O mais
+                                            recente design do designer de tecnologia John Doe</a>
+                                    </h2>
+                                    <div class="block-desc">
+                                        <p>Branding existe desde 350 d.C. e é derivado da palavra “Brandr”, que
+                                            significa “queimar” na língua nórdica antiga. Por volta de 1500, passou a
+                                            significar a marca que os fazendeiros queimavam no gado para significar
+                                            propriedade. Ainda assim, a marca hoje é mais do que apenas um visual ou um
+                                            logotipo. Passou a significar a reação emocional de &quot;intuição&quot; que
+                                            uma empresa pode provocar em seus clientes</p>
+                                    </div>
+                                    <div class="project-button">
+                                        <a href="https://quin.lucian.host/post/tech-designer-john-does-latest-creation"
+                                            title="O mais recente design do designer de tecnologia John Doe"><span>Carregue
+                                                mais</span><svg viewBox="0 0 80 80">
+                                                <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                                <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-single-post">
+                        <div class="after-bg">
+                            <img class="lazy blog_post_image img-fluid" width="370" height="380"
+                                src="https://cdn.dribbble.com/users/105033/screenshots/1132714/loading-animation-800.gif"
+                                data-src="/public/images/media/1615660211blog-psot1.jpg"
+                                alt="Os 6 principais artigos que você deve ler">
+                        </div>
+                        <div class="blog-item">
+                            <div class="box-content p-relative">
+                                <div class="box-content-body">
+                                    <div class="entry-meta">
+                                        <div class="entry-date"><span> Mar 13, 2021 </span></div>
+                                    </div>
+                                    <h2 class="title-block">
+                                        <a href="https://quin.lucian.host/post/top-6-articles-you-must-read-today-niva"
+                                            title="Os 6 principais artigos que você deve ler">Os 6 principais artigos
+                                            que você deve ler</a>
+                                    </h2>
+                                    <div class="block-desc">
+                                        <p>Branding existe desde 350 d.C. e é derivado da palavra “Brandr”, que
+                                            significa “queimar” na língua nórdica antiga. Por volta de 1500, passou a
+                                            significar a marca que os fazendeiros queimavam no gado para significar
+                                            propriedade. Ainda assim, a marca hoje é mais do que apenas um visual ou um
+                                            logotipo. Passou a significar a reação emocional de &quot;intuição&quot; que
+                                            uma empresa pode provocar em seus clientes</p>
+                                    </div>
+                                    <div class="project-button">
+                                        <a href="https://quin.lucian.host/post/top-6-articles-you-must-read-today-niva"
+                                            title="Os 6 principais artigos que você deve ler"><span>Carregue
+                                                mais</span><svg viewBox="0 0 80 80">
+                                                <polyline points="19.89 15.25 64.03 15.25 64.03 59.33"></polyline>
+                                                <line x1="64.03" y1="15.25" x2="14.03" y2="65.18"></line>
+                                            </svg></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="typed-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 class="parent-typed-text">
+                        <span class="mt_typed-beforetext">Você está procurando por </span>
+                        <span class="mt_typed_text"></span>
+                    </h4>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a href="https://quin.lucian.host/contact" target="_self"
+                        class="btn btn-style1"><span>Contato</span><svg width="11.4" height="9.2">
+                            <use xlink:href="#arrow"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+        <div class="footer-wrapper">
+            <div class="row align-items-end">
+                <div class="col-lg-6">
+                    <div class="footer-left">
+                        <div class="inner">
+                            <span>PRONTO PARA FAZER ISSO</span>
+                            <h4>Vamos ao trabalho</h4>
+                            <a class="btn btn-style2" href="https://quin.lucian.host/contact"> <span>Contate-Nos</span>
+                                <svg width="11.4" height="9.2">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-right">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <div class="footer-widget widget_nav_menu">
+                                        <h4 class="title">Links Rápidos</h4>
+                                        <span class="venor-animate-border"></span>
+                                        <div class="menu-quick-link-container">
+                                            <ul class="menu">
+                                                <li class="menu-item-footer"><a href="/gdpr">GDPR</a></li>
+                                                <li class="menu-item-footer"><a href="/terms-conditions">Termos e
+                                                        Condi&ccedil;&otilde;es</a></li>
+                                                <li class="menu-item-footer"><a href="/privacy-policy">Pol&iacute;tica
+                                                        de Privacidade</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-12">
+                                <div class="footer-widget">
+                                    <div class="widget widget_custom_html">
+                                        <h4 class="title">Diga olá</h4>
+                                        <span class="venor-animate-border"></span>
+                                        <div class="custom-html-widget">
+                                            <ul class="ft-link">
+                                                <li><a href="mailto:admin@example.com">admin@example.com</a></li>
+                                                <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                            </ul>
+                                            <div class="social-share-inner">
+                                                <ul class="social-share">
+                                                    <li><a href="https://twitter.com/SweetThemes1" target="_blank"
+                                                            rel="noopener"><em
+                                                                class="fab fa-facebook-f"><strong>facebook</strong></em></a>
+                                                    </li>
+                                                    <li><a href="https://www.instagram.com" target="_blank"
+                                                            rel="noopener"><em
+                                                                class="fab fa-twitter"><strong>instagram</strong></em></a>
+                                                    </li>
+                                                    <li><a href="https://www.behance.net" target="_blank"
+                                                            rel="noopener"><em
+                                                                class="fab fa-behance"><strong>behance</strong></em></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="copyright-text">
+                                    <p>&copy; 2021. Todos os direitos reservados por <a
+                                            href="https://themeforest.net/user/sweet-themes">Sweet-Themes.</a> Estamos
+                                        rastreando qualquer inten&ccedil;&atilde;o de pirataria.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <div class="hidden" itemscope="" itemtype="https://schema.org/LocalBusiness">
+        <span itemprop="description"> Quer você precise de um novo logotipo, site, vídeo, campanha de marketing ou ebook
+            criado para sua empresa, a chave para tornar o projeto um sucesso começa com um briefing criativo bem
+            pensado. </span>
+        <a itemprop="url" href="https://quin.lucian.host"> </a>
+        <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+            <img src="https://quin.lucian.host/public/images/media/1633027761logo.svg" alt="logo" width="120"
+                itemprop="url">
+        </div>
+        <span itemprop="name">Quin CMS Tema</span>
+        <em><span itemprop="priceRange">300$ to 5000$</span></em>
+        <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Rua Unirii, 191, Bucareste</span> |
+            <span itemprop="addressCountry">Romania</span> |
+            <span itemprop="telephone">+40741395171</span> |
+            <span itemprop="email">contact@niva.host</span>
+        </div>
+    </div>
+    <a class="chat__trigger-quin logo-chat" href="https://wa.me/+40741395171" target="_blank" title="whatsapp">
+        <svg class="chat" width="30.2" height="30.2">
+            <use xlink:href="#chat"></use>
+        </svg>
+    </a>
+    <script src="https://quin.lucian.host/js/libs/jquery.min.js"></script>
+    <script src="https://quin.lucian.host/js/front/popper.min.js"></script>
+    <script src="https://quin.lucian.host/js/front/bootstrap.min.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/owl.carousel.min.js"></script>
+    <script src="https://quin.lucian.host/js/front/simpleParallax.min.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/countTO.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/typed.min.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/shuffleLetters.js " defer></script>
+    <script src="https://quin.lucian.host/js/front/magnific.min.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/scrollreveal.min.js" defer></script>
+    <script src="https://quin.lucian.host/js/front/venor.js" defer></script>
+    <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="arrow" xmlns="http://www.w3.org/2000/svg" width="11.4" height="9.2">
+            <path
+                d="M11.3 4.1L8.1.2c-.3-.2-.7-.3-1 0-.3.2-.3.6-.1.9l2.3 2.8H.7c-.4 0-.7.3-.7.7 0 .4.3.7.7.7h8.6L7 8c-.2.3-.2.8.1 1 .3.2.7.2 1-.1L11.3 5c.2-.3.2-.6 0-.9z" />
+        </symbol>
+        <symbol id="chat" xmlns="http://www.w3.org/2000/svg" width="30.2" height="30.2" viewBox="0 0 30.2 30.2"
+            style="enable-background:new 0 0 30.2 30.2">
+            <path
+                d="M15.1 29c-2.5 0-5-.7-7.2-2l-.2-.1-5.1 1.5c-.2.1-.4 0-.5-.1-.2-.1-.2-.3-.2-.5l1.5-5.1-.1-.2c-1.3-2.2-2-4.7-2-7.3 0-7.7 6.2-13.9 13.9-13.9S29 7.4 29 15.1C29 22.8 22.7 29 15.1 29zm0-29C6.8 0 0 6.8 0 15.1c0 2.7.7 5.3 2 7.6l.1.1-1.3 4.6c-.2.6 0 1.2.4 1.7.4.4 1.1.6 1.7.4l4.7-1.3.1.1c2.3 1.3 4.9 2 7.5 2 8.3 0 15.1-6.8 15.1-15.1S23.4 0 15.1 0z" />
+            <path
+                d="M7.7 18.1c-1.6 0-3-1.3-3-3 0-1.6 1.3-3 3-3 1.6 0 3 1.3 3 3s-1.4 3-3 3zm0-5c-1.1 0-2.1.9-2.1 2.1 0 1.1.9 2.1 2.1 2.1s2.1-.9 2.1-2.1c0-1.2-1-2.1-2.1-2.1zM14.8 18.1c-1.6 0-3-1.3-3-3 0-1.6 1.3-3 3-3 1.6 0 3 1.3 3 3s-1.3 3-3 3zm0-5c-1.1 0-2.1.9-2.1 2.1 0 1.1.9 2.1 2.1 2.1s2.1-.9 2.1-2.1c0-1.2-.9-2.1-2.1-2.1zM21.8 18.1c-1.6 0-3-1.3-3-3 0-1.6 1.3-3 3-3 1.6 0 3 1.3 3 3s-1.4 3-3 3zm0-5c-1.1 0-2.1.9-2.1 2.1 0 1.1.9 2.1 2.1 2.1 1.1 0 2.1-.9 2.1-2.1-.1-1.2-1-2.1-2.1-2.1z" />
+        </symbol>
+        <symbol id="scroll" xmlns="http://www.w3.org/2000/svg" width="15" height="22.1">
+            <path class="st0"
+                d="M7.5 16.5c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM7.5 9.8c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM7.5 6.5c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM7.5 3.2c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM7.5 0c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1C6.4.5 6.9 0 7.5 0zM7.5 19.8c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM4.2 16.5c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM10.6 16.5c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM7.5 13.2c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM1.9 13.5c.4.4.4 1.2 0 1.6-.4.4-1.2.4-1.6 0-.4-.4-.4-1.2 0-1.6.5-.4 1.2-.4 1.6 0M4.3 13.2c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1zM14.7 13.5c.4.4.4 1.2 0 1.6-.4.4-1.2.4-1.6 0-.4-.4-.4-1.2 0-1.6.4-.4 1.1-.4 1.6 0M10.7 13.2c.6 0 1.1.5 1.1 1.1 0 .6-.5 1.1-1.1 1.1-.6 0-1.1-.5-1.1-1.1 0-.6.5-1.1 1.1-1.1z" />
+        </symbol>
+    </svg>
+    <style scoped>
+        section.sweet-buy-section {
+            width: 300px;
+            height: 100%;
+            min-height: 100%;
+            position: fixed;
+            right: -300px;
+            top: 0;
+            z-index: 777777;
+        }
+
+        .sweet-purchase,
+        .sweet-buy-related {
+            position: absolute;
+            left: -127px;
+            z-index: 777777;
+            font-size: 12px !important;
+            letter-spacing: .07em;
+            display: block;
+            height: 44px;
+            width: 127px;
+        }
+
+        .sweet-buy-related .sweet-btn,
+        .sweet-purchase a {
+            position: relative;
+            display: block;
+            cursor: pointer;
+            font-size: 0 !important;
+            line-height: 44px !important;
+            font-weight: 500;
+        }
+
+        span.sweet-icon {
+            color: #fff;
+            width: 44px;
+            display: inline-block;
+            line-height: 1 !important;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+        }
+
+        span.sweet-text-name {
+            color: #000;
+            font-size: 12px !important;
+            letter-spacing: 0.07em !important;
+            font-weight: 500;
+        }
+
+        .sweet-purchase {
+            background-color: #000;
+            box-shadow: 0 0 9.5px 0.3px rgba(0, 0, 0, 0.1);
+        }
+
+        span.sweet-purchase-text {
+            color: #fff;
+            font-size: 12px !important;
+            letter-spacing: .11em !important;
+            font-weight: 500;
+        }
+
+        span.sweet-icon svg {
+            max-width: 20px;
+            fill: #fff;
+            height: 16px;
+            position: relative;
+            bottom: 4px;
+            right: -2px;
+        }
+
+        .sweet-buy-related {
+            background-color: #fff;
+            box-shadow: 0 0 9.5px 0.3px rgba(0, 0, 0, 0.1);
+        }
+
+        .sweet-buy-related svg {
+            fill: rgb(130, 181, 65) !important;
+        }
+
+        .rtl .sweet-purchase {
+            padding-left: 15px;
+        }
+
+        .rtl .sweet-btn {
+            padding-left: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        (function ($) {
+            'use strict';
+            $(document).ready(function () {
+                /* TYPED TEXT */
+                $(function () {
+                    $(".mt_typed_text").typed({
+                        strings: ['Web Design?', 'Mídia social?', 'Design de impressão?', 'Design digital?', 'Design de impressão?'], //blade / php dynamic functionality
+                        typeSpeed: 1,
+                        backDelay: 4000,
+                        loop: true
+                    });
+                });
+            })
+        }(jQuery))
+    </script>
+    <script type="text/javascript">
+        console.log('working'); //blade / php dynamic functionality
+    </script>
+    <!-- body -->
+</body>
+
+</html>
